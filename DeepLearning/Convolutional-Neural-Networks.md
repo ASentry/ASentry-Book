@@ -49,3 +49,11 @@
 14.如果导数为负，则参数向更大的方向走，反之，向更小的方向走。学习率控制变化速度
 
 15.越复杂的model不一定会获得更好的结果，可能发生过拟合(overfit)
+
+16.传统梯度下降：<br>
+<image src="../image/Gradirnt-Descent.png" weight="550" height="400">
+
+17.动量梯度下降：<br>
+<image src="../image/Momentum-Gradirnt-Descent.png" weight="550" height="400">
+
+18.Dropout:每次更新参数时都要随机丢掉一部分神经元，对新的神经网络进行训练。训练时准确率下降，但测试时会上升。测试时不dropout,但权重要乘以(1-p%)(p%是训练时设置的dropout rate)
