@@ -51,9 +51,26 @@
 15.越复杂的model不一定会获得更好的结果，可能发生过拟合(overfit)
 
 16.传统梯度下降：<br>
-<image src="../image/Gradirnt-Descent.png" weight="550" height="400">
+<image src="../image/Gradirnt-Descent.png" weight="550" height="400" style="display:block; margin:0 auto;">
 
 17.动量梯度下降：<br>
-<image src="../image/Momentum-Gradirnt-Descent.png" weight="550" height="400">
+<image src="../image/Momentum-Gradirnt-Descent.png" weight="550" height="400" style="display:block; margin:0 auto;">
 
 18.Dropout:每次更新参数时都要随机丢掉一部分神经元，对新的神经网络进行训练。训练时准确率下降，但测试时会上升。测试时不dropout,但权重要乘以(1-p%)(p%是训练时设置的dropout rate)
+
+19.RNN:将之前的输出存贮起来，下次使用后更新<br>
+<image src="../image/RNN.png" weight="550" height="400" style="display:block; margin:0 auto;">
+
+20.Elman NetWork&Jordan Network<br>
+<image src="../image/Elman&Jordan.png" weight="550" height="400" style="display:block; margin:0 auto;">
+
+21.Bidirectional RNN:看的范围比较广<br>
+<image src="../image/Bidirectional-RNN.png" weight="550" height="400" style="display:block; margin:0 auto;">
+
+22.LSTM:<br>
+<image src="../image/LSTM.png" weight="550" height="400" style="display:block; margin:0 auto;">
+
+23.RNN换为LSTM的原因：LSTM可以解决梯度消失的问题。<br>
+<image src="../image/LSTM-inner.png" weight="550" height="400" style="display:block; margin:0 auto;">
+
+24.CTC:用NULL代替重复符号
