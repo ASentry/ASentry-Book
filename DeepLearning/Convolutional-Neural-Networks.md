@@ -74,3 +74,6 @@
 <image src="../image/LSTM-inner.png" weight="550" height="400" style="display:block; margin:0 auto;">
 
 24.CTC:用NULL代替重复符号
+
+25.Self-Attention：<br>
+<image src="../image/Self-Attention.png" weight="550" height="400" style="display:block; margin:0 auto;">
