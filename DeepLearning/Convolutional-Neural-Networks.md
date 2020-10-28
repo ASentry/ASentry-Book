@@ -4,6 +4,7 @@
 $$
 y=f(x),z=g(y),\frac{\partial z}{\partial x}=\frac{\partial z}{\partial y}\cdot\frac{\partial y}{\partial x}
 $$
+<br>
 2.卷积核奇偶选择:奇数卷积核，奇数有利于原始数据对应。也可以选择偶数卷积核
 
 3.上采样：输入图像经过卷积神经网络提取特征后，输出尺寸会变小，而将图像恢复到原来尺寸，实现小分辨率到大分辨率的映射操作叫上采样。上采样常见三种方法：双线性差值(bilinear)，反卷积(Transposed Convolution)，反池化(Unpooling)
