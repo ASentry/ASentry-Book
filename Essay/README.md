@@ -1,4 +1,3 @@
 # 随笔
 
-> 我们之所以战斗不是为了改变世界，而是为了不让世界改变我们。——《熔炉》
-                                                                              
+<image src="../image/loong.bmp" weight="550" height="50" style="display:block; margin:0 auto;">
