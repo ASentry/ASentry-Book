@@ -73,6 +73,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="Markov.html" />
+    
     
     <link rel="prev" href="Likelihood-Function.html" />
     
@@ -287,6 +289,32 @@
             
                     
                     ResNet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="Markov.html">
+            
+                <a href="Markov.html">
+            
+                    
+                    马尔可夫链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="Function-Note.html">
+            
+                <a href="Function-Note.html">
+            
+                    
+                    函数笔记
             
                 </a>
             
@@ -680,10 +708,14 @@ def wide_resnet101_2(pretrained: bool = False, progress: bool = True, **kwargs: 
 
             
                 
-                <a href="Likelihood-Function.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 似然函数">
+                <a href="Likelihood-Function.html" class="navigation navigation-prev " aria-label="Previous page: 似然函数">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="Markov.html" class="navigation navigation-next " aria-label="Next page: 马尔可夫链">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -692,7 +724,7 @@ def wide_resnet101_2(pretrained: bool = False, progress: bool = True, **kwargs: 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ResNet","level":"1.4.9","depth":2,"previous":{"title":"似然函数","level":"1.4.8","depth":2,"path":"CV/Likelihood-Function.md","ref":"CV/Likelihood-Function.md","articles":[]},"dir":"ltr"},"config":{"plugins":["multipart","back-to-top-button","-lunr","-search","search-pro","pageview-count","tbfed-pagefooter","popup","hide-element","mathjax","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy ASentry 2020","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"livereload":{},"search-pro":{},"popup":{},"multipart":{},"hide-element":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"ASentry","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ASentry Book","language":"zh-hans","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{}},"gitbook":"*","description":"ASentry的学习笔记、随笔等","extension":null},"file":{"path":"CV/ResNet.md","mtime":"2020-11-03T07:38:54.791Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-03T07:35:05.086Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ResNet","level":"1.4.9","depth":2,"next":{"title":"马尔可夫链","level":"1.4.10","depth":2,"path":"CV/Markov.md","ref":"CV/Markov.md","articles":[]},"previous":{"title":"似然函数","level":"1.4.8","depth":2,"path":"CV/Likelihood-Function.md","ref":"CV/Likelihood-Function.md","articles":[]},"dir":"ltr"},"config":{"plugins":["multipart","back-to-top-button","-lunr","-search","search-pro","pageview-count","tbfed-pagefooter","popup","hide-element","mathjax","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy ASentry 2020","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"livereload":{},"search-pro":{},"popup":{},"multipart":{},"hide-element":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"ASentry","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ASentry Book","language":"zh-hans","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{}},"gitbook":"*","description":"ASentry的学习笔记、随笔等","extension":null},"file":{"path":"CV/ResNet.md","mtime":"2020-11-03T07:38:54.791Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-07T01:22:57.407Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
