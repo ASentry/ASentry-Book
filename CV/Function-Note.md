@@ -19,3 +19,12 @@ torch.cat()是将两个张量（tensor）拼接在一起
 
 unsqueeze()添加维度，squeeze()删除维度
 
+numpy.prod(a, axis=None, dtype=None, out=None, keepdims=<no value>, initial=<no value>)
+
+axis是指求积的维度
+
+keepdims是指保持维度，不缩减
+
+initial是起始数，即返回的矩阵会在元素乘积上再乘起始数
+
+torch.nn.init.normal_(tensor, mean=0, std=1) 初始化服从~N(mean, std)

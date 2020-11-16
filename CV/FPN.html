@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>CV笔记 · ASentry Book</title>
+        <title>FPN · ASentry Book</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -73,10 +73,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Convolutional-Neural-Networks.html" />
+    <link rel="next" href="Math.html" />
     
     
-    <link rel="prev" href="../Essay/GoldenLine.html" />
+    <link rel="prev" href="Function-Note.html" />
     
 
     </head>
@@ -165,7 +165,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="./">
+        <li class="chapter " data-level="1.4" data-path="./">
             
                 <a href="./">
             
@@ -322,7 +322,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.12" data-path="FPN.html">
+        <li class="chapter active" data-level="1.4.12" data-path="FPN.html">
             
                 <a href="FPN.html">
             
@@ -383,7 +383,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >CV笔记</a>
+        <a href=".." >FPN</a>
     </h1>
 </div>
 
@@ -398,12 +398,24 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="cv&#x7B14;&#x8BB0;">CV&#x7B14;&#x8BB0;</h1>
-<p>CV&#x76F8;&#x5173;&#x7B14;&#x8BB0; </p>
+                                <h1 id="fpn">FPN</h1>
+<h3 id="fpn&#x57FA;&#x672C;&#x7ED3;&#x6784;">FPN&#x57FA;&#x672C;&#x7ED3;&#x6784;</h3>
+<p>FPN&#x4F1A;&#x4F7F;&#x7528;CNN&#x7F51;&#x7EDC;&#x4E2D;&#x6BCF;&#x4E00;&#x5C42;&#x7684;&#x4FE1;&#x606F;&#x6765;&#x751F;&#x6210;&#x6700;&#x540E;&#x7684;&#x8868;&#x8FBE;&#x7279;&#x5F81;&#x7EC4;&#x5408;&#x3002;&#x4E0B;&#x56FE;&#x662F;&#x5B83;&#x7684;&#x57FA;&#x672C;&#x67B6;&#x6784;&#x3002;&#x4ECE;&#x4E2D;&#x6211;&#x4EEC;&#x80FD;&#x770B;&#x5230;FPN&#x4F1A;&#x6A21;&#x578B;&#x6BCF;&#x4E2A;CNN&#x5C42;&#x7684;&#x7279;&#x5F81;&#x8F93;&#x51FA;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x4EE5;&#x751F;&#x6210;&#x53CD;&#x6620;&#x6B64;&#x7EF4;&#x5EA6;&#x4FE1;&#x606F;&#x7684;&#x7279;&#x5F81;&#x3002;&#x800C;&#x81EA;&#x4E0A;&#x81F3;&#x4E0B;&#x5904;&#x7406;&#x540E;&#x6240;&#x751F;&#x6210;&#x51FA;&#x7684;&#x7279;&#x5F81;&#x4E4B;&#x95F4;&#x4E5F;&#x6709;&#x4E2A;&#x5173;&#x8054;&#x5173;&#x7CFB;&#xFF0C;&#x5373;&#x4E0A;&#x5C42;high level&#x7684;&#x7279;&#x5F81;&#x4F1A;&#x5F71;&#x54CD;&#x4E0B;&#x4E00;&#x5C42;&#x6B21;&#x7684;low level&#x7279;&#x5F81;&#x8868;&#x8FBE;&#x3002;&#x6700;&#x7EC8;&#x6240;&#x6709;&#x7684;&#x7279;&#x5F81;&#x4E00;&#x8D77;&#x7528;&#x6765;&#x4F5C;&#x4E3A;&#x4E0B;&#x4E00;&#x6B65;&#x7684;&#x76EE;&#x6807;&#x68C0;&#x6D4B;&#x6216;&#x7C7B;&#x522B;&#x5206;&#x6790;&#x7B49;&#x4EFB;&#x52A1;&#x7684;&#x8F93;&#x5165;&#x3002;</p>
+<image src="../image/FPN.png" weight="550" height="400" style="display:block; margin:0 auto;">
+
+<h3 id="fpn&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;">FPN&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;</h3>
+<p>FPN&#x662F;&#x4F20;&#x7EDF;CNN&#x7F51;&#x7EDC;&#x5BF9;&#x56FE;&#x7247;&#x4FE1;&#x606F;&#x8FDB;&#x884C;&#x8868;&#x8FBE;&#x8F93;&#x51FA;&#x7684;&#x4E00;&#x79CD;&#x589E;&#x5F3A;&#x3002;&#x5B83;&#x76EE;&#x7684;&#x662F;&#x4E3A;&#x4E86;&#x6539;&#x8FDB;CNN&#x7F51;&#x7EDC;&#x7684;&#x7279;&#x5F81;&#x63D0;&#x53D6;&#x65B9;&#x5F0F;&#xFF0C;&#x4ECE;&#x800C;&#x53EF;&#x4EE5;&#x4F7F;&#x6700;&#x7EC8;&#x8F93;&#x51FA;&#x7684;&#x7279;&#x5F81;&#x66F4;&#x597D;&#x5730;&#x8868;&#x793A;&#x51FA;&#x8F93;&#x5165;&#x56FE;&#x7247;&#x5404;&#x4E2A;&#x7EF4;&#x5EA6;&#x7684;&#x4FE1;&#x606F;&#x3002;&#x5B83;&#x7684;&#x57FA;&#x672C;&#x8FC7;&#x7A0B;&#x6709;&#x4E09;&#x4E2A;&#x5206;&#x522B;&#x4E3A;&#xFF1A;&#x81EA;&#x4E0B;&#x81F3;&#x4E0A;&#x7684;&#x901A;&#x8DEF;&#x5373;&#x81EA;&#x4E0B;&#x81F3;&#x4E0A;&#x7684;&#x4E0D;&#x540C;&#x7EF4;&#x5EA6;&#x7279;&#x5F81;&#x751F;&#x6210;&#xFF1B;&#x81EA;&#x4E0A;&#x81F3;&#x4E0B;&#x7684;&#x901A;&#x8DEF;&#x5373;&#x81EA;&#x4E0A;&#x81F3;&#x4E0B;&#x7684;&#x7279;&#x5F81;&#x8865;&#x5145;&#x589E;&#x5F3A;&#xFF1B;CNN&#x7F51;&#x7EDC;&#x5C42;&#x7279;&#x5F81;&#x4E0E;&#x6700;&#x7EC8;&#x8F93;&#x51FA;&#x7684;&#x5404;&#x7EF4;&#x5EA6;&#x7279;&#x5F81;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x8054;&#x8868;&#x8FBE;&#x3002;</p>
+<image src="../image/FPN-Detail.png" weight="550" height="400" style="display:block; margin:0 auto;">
+
+<ul>
+<li>&#x81EA;&#x4E0B;&#x81F3;&#x4E0A;&#x7684;&#x901A;&#x8DEF;&#xFF08;Bottom-top pathway&#xFF09;&#xFF1A;&#x662F;&#x6307;&#x7684;&#x666E;&#x901A;CNN&#x7279;&#x5F81;&#x81EA;&#x5E95;&#x81F3;&#x4E0A;&#x9010;&#x5C42;&#x6D53;&#x7F29;&#x8868;&#x8FBE;&#x7279;&#x5F81;&#x7684;&#x4E00;&#x4E2A;&#x8FC7;&#x7A0B;&#x3002;&#x6B64;&#x8FC7;&#x7A0B;&#x5F88;&#x65E9;&#x5373;&#x88AB;&#x8BA4;&#x8BC6;&#x5230;&#x4E86;&#x5373;&#x8F83;&#x5E95;&#x7684;&#x5C42;&#x53CD;&#x6620;&#x8F83;&#x6D45;&#x5C42;&#x6B21;&#x7684;&#x56FE;&#x7247;&#x4FE1;&#x606F;&#x7279;&#x5F81;&#x50CF;&#x8FB9;&#x7F18;&#x7B49;&#xFF1B;&#x8F83;&#x9AD8;&#x7684;&#x5C42;&#x5219;&#x53CD;&#x6620;&#x8F83;&#x6DF1;&#x5C42;&#x6B21;&#x7684;&#x56FE;&#x7247;&#x7279;&#x5F81;&#x50CF;&#x7269;&#x4F53;&#x8F6E;&#x5ED3;&#x3001;&#x4E43;&#x81F3;&#x7C7B;&#x522B;&#x7B49;&#xFF1B;</li>
+<li>&#x81EA;&#x4E0A;&#x81F3;&#x4E0B;&#x7684;&#x901A;&#x8DEF;&#xFF08;Top-bottome pathway&#xFF09;&#xFF1A;&#x4E0A;&#x5C42;&#x7684;&#x7279;&#x5F81;&#x8F93;&#x51FA;&#x4E00;&#x822C;&#x5176;feature map size&#x6BD4;&#x8F83;&#x5C0F;&#xFF0C;&#x4F46;&#x5374;&#x80FD;&#x8868;&#x793A;&#x66F4;&#x5927;&#x7EF4;&#x5EA6;&#xFF08;&#x540C;&#x65F6;&#x4E5F;&#x662F;&#x66F4;&#x52A0;high level&#xFF09;&#x7684;&#x56FE;&#x7247;&#x4FE1;&#x606F;&#x3002;&#x6B64;&#x7C7B;high level&#x4FE1;&#x606F;&#x7ECF;&#x5B9E;&#x9A8C;&#x8BC1;&#x660E;&#x80FD;&#x591F;&#x5BF9;&#x540E;&#x7EED;&#x7684;&#x76EE;&#x6807;&#x68C0;&#x6D4B;&#x3001;&#x7269;&#x4F53;&#x5206;&#x7C7B;&#x7B49;&#x4EFB;&#x52A1;&#x53D1;&#x6325;&#x5173;&#x952E;&#x4F5C;&#x7528;&#x3002;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x5728;&#x5904;&#x7406;&#x6BCF;&#x4E00;&#x5C42;&#x4FE1;&#x606F;&#x65F6;&#x4F1A;&#x53C2;&#x8003;&#x4E0A;&#x4E00;&#x5C42;&#x7684;high level&#x4FE1;&#x606F;&#x505A;&#x4E3A;&#x5176;&#x8F93;&#x5165;&#xFF08;&#x8FD9;&#x91CC;&#x53EA;&#x662F;&#x5728;&#x5C06;&#x4E0A;&#x5C42;feature map&#x7B49;&#x6BD4;&#x4F8B;&#x653E;&#x5927;&#x540E;&#x518D;&#x4E0E;&#x672C;&#x5C42;&#x7684;feature maps&#x505A;element wise&#x76F8;&#x52A0;&#xFF09;;</li>
+<li>CNN&#x5C42;&#x7279;&#x5F81;&#x4E0E;&#x6BCF;&#x4E00;&#x7EA7;&#x522B;&#x8F93;&#x51FA;&#x4E4B;&#x95F4;&#x7684;&#x8868;&#x8FBE;&#x5173;&#x8054;&#xFF1A;&#x5728;&#x8FD9;&#x91CC;&#x4F5C;&#x8005;&#x5B9E;&#x9A8C;&#x8868;&#x660E;&#x4F7F;&#x7528;1x1&#x7684;Conv&#x5373;&#x53EF;&#x751F;&#x6210;&#x8F83;&#x597D;&#x7684;&#x8F93;&#x51FA;&#x7279;&#x5F81;&#xFF0C;&#x5B83;&#x53EF;&#x6709;&#x6548;&#x5730;&#x964D;&#x4F4E;&#x4E2D;&#x95F4;&#x5C42;&#x6B21;&#x7684;channels &#x6570;&#x76EE;&#x3002;&#x6700;&#x7EC8;&#x8FD9;&#x4E9B;1x1&#x7684;Convs&#x4F7F;&#x5F97;&#x6211;&#x4EEC;&#x8F93;&#x51FA;&#x4E0D;&#x540C;&#x7EF4;&#x5EA6;&#x7684;&#x5404;&#x4E2A;feature maps&#x6709;&#x7740;&#x76F8;&#x540C;&#x7684;channels&#x6570;&#x76EE;&#xFF08;&#x672C;&#x6587;&#x7528;&#x5230;&#x7684;Resnet-101&#x4E3B;&#x5E72;&#x7F51;&#x7EDC;&#x4E2D;&#xFF0C;&#x5404;&#x4E2A;&#x5C42;&#x6B21;&#x7279;&#x5F81;&#x7684;&#x6700;&#x7EC8;&#x8F93;&#x51FA;channels&#x6570;&#x76EE;&#x4E3A;256&#xFF09;</li>
+</ul>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; ASentry 2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2020-10-29 09:48:37
+2020-11-08 19:46:38
 </span></footer>
-<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style></image></image>
                                 
                                 </section>
                             
@@ -430,12 +442,12 @@
 
             
                 
-                <a href="../Essay/GoldenLine.html" class="navigation navigation-prev " aria-label="Previous page: 佳句">
+                <a href="Function-Note.html" class="navigation navigation-prev " aria-label="Previous page: 函数笔记">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Convolutional-Neural-Networks.html" class="navigation navigation-next " aria-label="Next page: 卷积神经网络">
+                <a href="Math.html" class="navigation navigation-next " aria-label="Next page: 数学知识">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -446,7 +458,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"CV笔记","level":"1.4","depth":1,"next":{"title":"卷积神经网络","level":"1.4.1","depth":2,"path":"CV/Convolutional-Neural-Networks.md","ref":"CV/Convolutional-Neural-Networks.md","articles":[]},"previous":{"title":"佳句","level":"1.3.1","depth":2,"path":"Essay/GoldenLine.md","ref":"Essay/GoldenLine.md","articles":[]},"dir":"ltr"},"config":{"plugins":["multipart","back-to-top-button","-lunr","-search","search-pro","pageview-count","tbfed-pagefooter","popup","hide-element","mathjax","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy ASentry 2020","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"livereload":{},"search-pro":{},"popup":{},"multipart":{},"hide-element":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"ASentry","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ASentry Book","language":"zh-hans","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{}},"gitbook":"*","description":"ASentry的学习笔记、随笔等","extension":null},"file":{"path":"CV/README.md","mtime":"2020-10-29T01:48:37.175Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-16T08:17:01.231Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"FPN","level":"1.4.12","depth":2,"next":{"title":"数学知识","level":"1.4.13","depth":2,"path":"CV/Math.md","ref":"CV/Math.md","articles":[]},"previous":{"title":"函数笔记","level":"1.4.11","depth":2,"path":"CV/Function-Note.md","ref":"CV/Function-Note.md","articles":[]},"dir":"ltr"},"config":{"plugins":["multipart","back-to-top-button","-lunr","-search","search-pro","pageview-count","tbfed-pagefooter","popup","hide-element","mathjax","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy ASentry 2020","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"livereload":{},"search-pro":{},"popup":{},"multipart":{},"hide-element":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"ASentry","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ASentry Book","language":"zh-hans","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{}},"gitbook":"*","description":"ASentry的学习笔记、随笔等","extension":null},"file":{"path":"CV/FPN.md","mtime":"2020-11-08T11:46:38.199Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-16T08:17:01.231Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
