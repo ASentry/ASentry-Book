@@ -4,7 +4,7 @@
 
 FPN会使用CNN网络中每一层的信息来生成最后的表达特征组合。下图是它的基本架构。从中我们能看到FPN会模型每个CNN层的特征输出进行处理以生成反映此维度信息的特征。而自上至下处理后所生成出的特征之间也有个关联关系，即上层high level的特征会影响下一层次的low level特征表达。最终所有的特征一起用来作为下一步的目标检测或类别分析等任务的输入。
 
-<image src="../image/FPN.png" weight="550" height="400" style="display:block; margin:0 auto;">
+<image src="../image/FPN.jpg" weight="550" height="400" style="display:block; margin:0 auto;">
 
 ### FPN详细介绍
 
