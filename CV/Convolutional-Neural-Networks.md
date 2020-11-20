@@ -80,3 +80,30 @@ $$
 
 25.Self-Attention：<br>
 <image src="../image/Self-Attention.png" weight="550" height="400" style="display:block; margin:0 auto;">
+
+26.激活函数
+
+激活函数分为：饱和激活函数和非饱和激活函数
+
+1）饱和激活函数：能解决梯度消失问题，能加快收敛速度，如sigmod,tanh
+
+2）非饱和激活函数：
+
+**ReLu**
+
+**ELUs**:指数线性单元，它试图将激活函数的平均值接近零，从而加快学习速度。还能通过正值标识来避免梯度消失
+
+**Leaky ReLUs**:给所有负值赋予一个非零斜率
+
+**PReLU**:Leaky ReLUs的变体。负值部分斜率是根据数据来定的，而非预先定义。
+
+**RReLU**:Leaky ReLU的变体，训练中负值斜率随机，测试时固定
+
+<image src="../image/RReLU.png" weight="550" height="200" style="display:block; margin:0 auto;">
+
+下图是ReLU,Leaky ReLU,PReLU,RReLU的比较：
+
+<image src="../image/relu-compare.png" weight="550" height="200" style="display:block; margin:0 auto;">
+
+
+
